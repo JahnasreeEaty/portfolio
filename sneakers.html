@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        .sneaker-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .sneaker {
+            background: #fff;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sneaker img {
+            max-width: 100%;
+            height: auto;
+        }
+        .sneaker h2 {
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .sneaker p {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Sneakers Showcase</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="sneaker-list">
+            <div class="sneaker">
+                <img src="footmen.jpg" alt="MEN">
+                <h2>Nike Shoes</h2>
+                <p>Price: $120</p>
+            </div>
+            <div class="sneaker">
+                <img src="footwomen.jpg" alt="WOMEN">
+                <h2>Addidas Heels</h2>
+                <p>Price: $180</p>
+            </div>
+            <div class="sneaker">
+                <img src="footchild.jpg" alt="CHILD">
+                <h2>PumaShoes</h2>
+                <p>Price: $110</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
